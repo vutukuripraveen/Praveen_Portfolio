@@ -1,23 +1,23 @@
-import * as React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import { Typography } from "@mui/material";
-import { motion } from "framer-motion";
-import { AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
-import { useTheme } from "../../context/ThemeContext.jsx";
-import useOnScreen from "../../hooks/useOnScreen.jsx";
-import { educations, experiences } from "../../utils/Experience_Education.jsx";
+import * as React from 'react';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import { Typography } from '@mui/material';
+import { motion } from 'framer-motion';
+import { AcademicCapIcon, BriefcaseIcon } from '@heroicons/react/24/outline';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import { useTheme } from '../../context/ThemeContext.jsx';
+import useOnScreen from '../../hooks/useOnScreen.jsx';
+import { educations, experiences } from '../../utils/Experience_Education.jsx';
 
 export default function Experience() {
   const { theme } = useTheme();
-  const [alignment, setAlignment] = React.useState("experience");
+  const [alignment, setAlignment] = React.useState('experience');
   const [ref, visible] = useOnScreen({ threshold: 0.1 });
 
   const variants = {
@@ -30,7 +30,7 @@ export default function Experience() {
   };
 
   const getTimelineContent = () => {
-    return alignment === "experience" ? experiences : educations;
+    return alignment === 'experience' ? experiences : educations;
   };
 
   return (
@@ -39,13 +39,10 @@ export default function Experience() {
         ref={ref}
         className=" max-w-6xl mx-auto px-10 pt-20"
         initial="hidden"
-        animate={visible ? "visible" : "hidden"}
+        animate={visible ? 'visible' : 'hidden'}
         variants={variants}
         id="Experience"
       >
-        {/* <div className="text-center mx-auto pb-7 text-3xl font-bold ">
-          Experience / Education
-        </div> */}
         <Typography variant="h4" textAlign="center" mb={3}>
           Experience / Education
         </Typography>
@@ -58,17 +55,17 @@ export default function Experience() {
               indicatorColor="secondary"
               aria-label="secondary tabs example"
               sx={{
-                "& .MuiButtonBase-root MuiTab-root MuiTab-textColorSecondary, .css-1a4cg4j-MuiButtonBase-root-MuiTab-root, .css-1mrn996":
+                '& .MuiButtonBase-root MuiTab-root MuiTab-textColorSecondary, .css-1a4cg4j-MuiButtonBase-root-MuiTab-root, .css-1mrn996':
                   {
                     color: `${
-                      theme === "dark"
-                        ? "rgba(255, 255, 255, 0.6)"
-                        : "rgba(0, 0, 0, 0.6)"
+                      theme === 'dark'
+                        ? 'rgba(255, 255, 255, 0.6)'
+                        : 'rgba(0, 0, 0, 0.6)'
                     }`,
                   },
-                "& .css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1mrn996.Mui-selected":
+                '& .css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1mrn996.Mui-selected':
                   {
-                    color: "#9c27b0",
+                    color: '#9c27b0',
                   },
               }}
             >
@@ -84,7 +81,7 @@ export default function Experience() {
                 <TimelineItem key={index}>
                   <TimelineSeparator>
                     <TimelineDot color="primary">
-                      {alignment === "experience" ? (
+                      {alignment === 'experience' ? (
                         <BriefcaseIcon className="w-5 h-5" />
                       ) : (
                         <AcademicCapIcon className="w-5 h-5" />
@@ -102,7 +99,7 @@ export default function Experience() {
                     <Typography className="opacity-80">
                       {education.duration}
                     </Typography>
-                    {alignment === "experience" ? (
+                    {alignment === 'experience' ? (
                       <ul className="list-disc pl-5 text-left">
                         {education.description.map((desc, index) => (
                           <li key={index} className="mt-1 opacity-60">

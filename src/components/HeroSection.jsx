@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { ChevronDownIcon, EyeIcon } from "@heroicons/react/24/outline";
-import RanjithSeekolu from "../assets/RanjithSeekolu.jpg";
-import Modal from "@mui/material/Modal";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
-import { Download, Visibility } from "@mui/icons-material";
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { ChevronDownIcon, EyeIcon } from '@heroicons/react/24/outline';
+import PraveenVutukuri from '../assets/PraveenVutukuri.jpg';
+import Modal from '@mui/material/Modal';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+import { Download, Visibility } from '@mui/icons-material';
 
 const HeroSection = () => {
-  const [currentTitle, setCurrentTitle] = useState("");
+  const [currentTitle, setCurrentTitle] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [visibleTitleIndex, setVisibleTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -18,34 +18,34 @@ const HeroSection = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
     width: 400,
-    bgcolor: "background.paper",
-    border: "2px solid #000",
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
     boxShadow: 24,
     p: 4,
   };
 
   const handleDownload = () => {
     const downloadUrl =
-      "https://drive.google.com/file/d/1oU_gID_9BaoanegY8mRXg4X1DReUfa0S/view?usp=sharing";
-    window.open(downloadUrl, "_blank");
+      'https://drive.google.com/file/d/1GGofT4zW0RZTANSUctp_z8l5yFO4BPiI/view';
+    window.open(downloadUrl, '_blank');
   };
 
   const hoverAnimation = {
     scale: 1.1, // Scale up to 110% on hover
     transition: {
       duration: 0.2,
-      type: "spring",
+      type: 'spring',
     },
   };
   const jobTitles = [
-    "Full Stack Developer",
-    "React Developer",
-    "Node.js Developer",
+    'Full Stack Developer',
+    'React Developer',
+    'Node.js Developer',
   ];
 
   useEffect(() => {
@@ -99,7 +99,7 @@ const HeroSection = () => {
 
     window.scrollTo({
       top: offsetPosition,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -111,25 +111,25 @@ const HeroSection = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
         <div
           style={{
-            width: "80%",
-            height: "100vh",
-            position: "relative",
-            overflow: "auto",
+            width: '80%',
+            height: '100vh',
+            position: 'relative',
+            overflow: 'auto',
           }}
         >
           <IconButton
             aria-label="close"
             onClick={handleClose}
             style={{
-              position: "absolute",
-              color: "white",
+              position: 'absolute',
+              color: 'black',
               right: 50,
               top: 12,
               zIndex: 1,
@@ -142,10 +142,10 @@ const HeroSection = () => {
           </IconButton>
 
           <iframe
-            src="https://drive.google.com/file/d/1oU_gID_9BaoanegY8mRXg4X1DReUfa0S/preview"
+            src="https://drive.google.com/file/d/1GGofT4zW0RZTANSUctp_z8l5yFO4BPiI/view"
             width="100%"
             height="100%"
-            style={{ border: "none" }}
+            style={{ border: 'none' }}
             title="Resume"
           ></iframe>
         </div>
@@ -166,7 +166,7 @@ const HeroSection = () => {
               className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
               style={{
                 clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
               }}
             />
           </div>
@@ -174,16 +174,16 @@ const HeroSection = () => {
             <div className="text-center">
               <motion.div
                 className="inline-block rounded-full overflow-hidden mb-5"
-                style={{ width: "150px", height: "150px" }}
+                style={{ width: '150px', height: '150px' }}
                 whileHover={hoverAnimation}
               >
                 <img
-                  src={RanjithSeekolu}
+                  src={PraveenVutukuri}
                   alt="Your Name"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
-              <h1 className="text-5xl font-bold mb-4">Hello, I'm Ranjith</h1>
+              <h1 className="text-5xl font-bold mb-4">Hello, I'm Praveen</h1>
               <div>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -198,7 +198,7 @@ const HeroSection = () => {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#contact"
-                  onClick={() => scrollToSection("Contact")}
+                  onClick={() => scrollToSection('Contact')}
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Contact Me
@@ -250,7 +250,7 @@ const HeroSection = () => {
               className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
               style={{
                 clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
               }}
             />
           </div>

@@ -1,41 +1,42 @@
 export const experiences = [
   {
-    label: "Mapminds",
+    label: 'Rava Technologies Pvt, Ltd',
     description: [
-      "Collaborated with a dynamic team for end-to-end development of a real estate website for a client.",
-      "Utilized React for creating responsive front-end interfaces, optimizing the overall user experience.",
-      "Played a key role in back-end development using Node.js, ensuring secure and seamless server-front-end communication following MVC principles for effective and scalable architecture",
-      "Developed a WhatsApp chatbot for real estate agents using Gupshup, streamlining lead management processes and improving efficiency.",
+      'Developed complex web applications using React.js and JavaScript, increasing page speed performance by 20% through optimized rendering techniques.',
+      'Utilized React for creating responsive front-end interfaces, optimizing the overall user experience.',
+      'Refactored the codebase to reduce redundant code, decreasing maintenance time by 30%.',
+      'Designed and built 10+ reusable components, enhancing development efficiency and UI consistency across projects.',
+      'Collaborated with UX/UI designers to improve user workflows, resulting in a 15% increase in user retention.',
     ],
-    duration: "nov 2023 - current",
+    duration: 'Mar 2023 - current',
   },
   {
-    label: "Skillrazr",
+    label: 'Egnify Technologies Pvt Ltd',
     description: [
-      "Developed a dynamic course builder with state management for draft, review, and publishing phases.",
-      " Created a meeting scheduler using Google Calendar and optimized admin’s availability management.",
-      "ntegrated Razorpay for streamlined subscription management and utilized nodemailer for real-time notifications through emails",
+      'Developed and maintained 5+ responsive web applications, improving accessibility and engagement.',
+      'Integrated RESTful APIs and backend services, optimizing data flow and reducing network requests by 25%.',
+      'Conducted 30+ code reviews, ensuring adherence to best coding practices and improving code maintainability.',
+      'Resolved 95% of reported UI/UX issues and contributed to an internal design system, streamlining frontend development and reducing component duplication by 40%.',
     ],
-    duration: "mar 2023 - sep 2023",
+    duration: 'mar 2022 - Feb 2023',
   },
 ];
 
 export const educations = [
   {
     label:
-      "Rajiv Gandhi University of Knowledge Technologies (IIIT), RK Valley",
-    description: "B.Tech, Computer Science Engineering",
-    duration: "2019 - 2023",
+      'Kkr & Ksr Institute of Technology and Sciences, Andhra Pradesh, Guntur',
+    description: 'B.Tech, Civil  Engineering',
+    duration: '2014 - 2018',
   },
   {
-    label:
-      "Rajiv Gandhi University of Knowledge Technologies (IIIT), RK Valley",
-    description: "Pre University Course (PUC)",
-    duration: "2019 - 2023",
+    label: 'Narayana Junior College , Andhra Pradesh, Guntur',
+    description: 'Intermediate Public Education',
+    duration: '2012 - 2014',
   },
   {
-    label: "AP Residential school, Bhupathipalem",
-    description: "X",
-    duration: "2017",
+    label: 'Indian Spring School , Andhra Pradesh, Guntur',
+    description: 'X',
+    duration: '2012',
   },
 ];

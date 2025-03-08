@@ -1,7 +1,7 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Typography } from "@mui/material";
-import useOnScreen from "../hooks/useOnScreen.jsx";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Typography } from '@mui/material';
+import useOnScreen from '../hooks/useOnScreen.jsx';
 
 const About = () => {
   const [ref, visible] = useOnScreen({ threshold: 0.1 });
@@ -16,7 +16,7 @@ const About = () => {
       id="About"
       className="max-w-6xl mx-auto px-10 pt-10"
       initial="hidden"
-      animate={visible ? "visible" : "hidden"}
+      animate={visible ? 'visible' : 'hidden'}
       variants={variants}
       ref={ref}
     >
@@ -25,7 +25,7 @@ const About = () => {
         About Me
       </Typography>
       <p className="text-lg ">
-        Hey there, I'm Ranjith, a passionate full-stack developer. With
+        Hey there, I'm Praveen, a passionate full-stack developer. With
         expertise in both front-end and back-end technologies, I'm dedicated to
         creating seamless digital experiences. Let's build something amazing
         together! Feel free to explore my portfolio and reach out to collaborate
