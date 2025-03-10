@@ -9,9 +9,8 @@ export const projects = [
     description:
       'A personal portfolio website to showcase my projects and skills.',
     imageUrl: PORTFOLIOAPP, // Replace with actual image URLs
-    githubLink:
-      'https://github.com/https://github.com/vutukuripraveen/Praveen_Portfolio',
-    liveLink: 'https://yourusername.github.io/portfolio-website/',
+    githubLink: 'https://github.com/vutukuripraveen/Praveen_Portfolio',
+    liveLink: 'https://praveen-portfolio-omega.vercel.app/',
   },
   {
     title: 'Jobby Website',
